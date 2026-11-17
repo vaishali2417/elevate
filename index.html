@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Creative digital growth studio helping ambitious businesses grow online with websites, SEO, digital marketing and design.">
+<title>Elevate Studio — Digital Growth & Creative</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+:root{--bg:#080a12;--panel:#101522;--panel2:#141b2b;--text:#f5f7ff;--muted:#9ba5ba;--lime:#c8ff4d;--cyan:#62e6dc;--purple:#9275ff;--line:rgba(255,255,255,.11);--font:'DM Sans',sans-serif;--display:'Space Grotesk',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:var(--font);overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.container{width:min(1160px,calc(100% - 48px));margin:auto}.noise{position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}.glow{position:absolute;width:420px;height:420px;border-radius:50%;filter:blur(110px);opacity:.18;pointer-events:none}.glow.one{background:var(--purple);top:-180px;right:5%}.glow.two{background:var(--cyan);bottom:-180px;left:-150px;opacity:.1}
+/* navigation */
+header{position:fixed;z-index:30;top:0;width:100%;transition:.35s;border-bottom:1px solid transparent}header.scrolled{background:rgba(8,10,18,.82);backdrop-filter:blur(18px);border-color:var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 23px var(--display);letter-spacing:-1px;display:flex;align-items:center;gap:10px}.brand-mark{width:29px;height:29px;border-radius:9px;background:var(--lime);display:grid;place-items:center;color:#101510;font-weight:900;transform:rotate(-9deg)}.brand span:last-child{color:var(--lime)}.navlinks{display:flex;gap:34px;align-items:center;color:#c0c7d5;font-size:13px}.navlinks a{transition:.25s}.navlinks a:hover{color:var(--lime)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:13px 20px;font-weight:700;font-size:13px;transition:.3s;cursor:pointer}.nav-cta{background:var(--lime);color:#11170b;border:0}.nav-cta:hover,.btn.primary:hover{transform:translateY(-3px);box-shadow:0 12px 35px #c8ff4d30}.menu-btn{display:none;background:none;border:0;color:white;font-size:25px}
+/* hero */
+.hero{min-height:790px;padding:160px 0 95px;position:relative;display:flex;align-items:center;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:55px;align-items:center;position:relative;z-index:2}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--lime);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:25px}.eyebrow:before{content:'';width:24px;height:1px;background:var(--lime)}h1,h2,h3{font-family:var(--display)}h1{font-size:clamp(48px,6vw,78px);line-height:1.02;letter-spacing:-4px;max-width:680px}h1 .gradient{background:linear-gradient(100deg,var(--lime),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{color:var(--muted);font-size:16px;line-height:1.8;max-width:520px;margin:25px 0 32px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.btn.primary{background:var(--lime);color:#11170b;border:0}.btn.secondary:hover{border-color:var(--lime);color:var(--lime);transform:translateY(-3px)}.micro-proof{display:flex;align-items:center;gap:14px;margin-top:42px;color:var(--muted);font-size:12px}.avatars{display:flex}.avatars i{width:29px;height:29px;border-radius:50%;border:2px solid var(--bg);margin-left:-8px;background:linear-gradient(135deg,#f7bd91,#8956a8)}.avatars i:first-child{margin:0;background:linear-gradient(135deg,#e4b48a,#5e86b8)}.avatars i:nth-child(2){background:linear-gradient(135deg,#e4d18a,#bd6676)}.avatars i:nth-child(3){background:linear-gradient(135deg,#8ce0d2,#5868b8)}.micro-proof b{color:white}.hero-art{min-height:480px;position:relative;display:grid;place-items:center}.orb{width:min(390px,80vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 28%,#34415b 0,#1b2940 34%,#101625 68%,#0b101c 100%);border:1px solid #ffffff19;box-shadow:inset -30px -35px 80px #0008,0 0 100px #9275ff20;position:relative;animation:float 7s ease-in-out infinite}.orb:before,.orb:after{content:'';position:absolute;border:1px solid #c8ff4d70;border-radius:50%;inset:12%;transform:rotate(-25deg) scaleY(.36)}.orb:after{inset:4%;border-color:#62e6dc70;transform:rotate(35deg) scaleY(.28)}.orb-core{position:absolute;inset:26%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#c8ff4d,#58b9a5 34%,#4b4a9a 72%,#1b2142);filter:drop-shadow(0 0 40px #62e6dc65)}.float-card{position:absolute;background:rgba(19,27,43,.88);border:1px solid #ffffff20;backdrop-filter:blur(15px);border-radius:16px;padding:15px 18px;box-shadow:0 20px 60px #0005;animation:float 5s ease-in-out infinite}.float-card small{display:block;color:var(--muted);font-size:10px;margin-bottom:7px}.float-card strong{font:600 21px var(--display)}.float-card .up{color:var(--lime);font-size:12px}.fc1{top:45px;left:0}.fc2{right:-5px;bottom:70px;animation-delay:-2s}.fc3{right:12%;top:15px;animation-delay:-1s;padding:12px 16px}.mini-bars{display:flex;gap:5px;align-items:end;height:32px;margin-top:10px}.mini-bars i{width:7px;border-radius:4px;background:linear-gradient(var(--lime),#4c987e)}.mini-bars i:nth-child(1){height:30%}.mini-bars i:nth-child(2){height:55%}.mini-bars i:nth-child(3){height:42%}.mini-bars i:nth-child(4){height:75%}.mini-bars i:nth-child(5){height:100%}.scroll-note{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);font-size:10px;color:#68738b;letter-spacing:2px;text-transform:uppercase}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
+/* marquee */
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding:19px 0;background:#0b0f19}.marquee-track{display:flex;width:max-content;animation:marquee 28s linear infinite;gap:55px;align-items:center}.marquee span{font:600 12px var(--display);letter-spacing:2px;color:#7f8aa1;text-transform:uppercase;white-space:nowrap}.marquee b{color:var(--lime);font-size:17px}@keyframes marquee{to{transform:translateX(-50%)}}
+/* sections */
+section{padding:115px 0;position:relative}.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:48px}.section-head h2{font-size:clamp(35px,4vw,52px);letter-spacing:-2.5px;line-height:1.08;max-width:600px}.section-head p{color:var(--muted);line-height:1.7;max-width:380px;font-size:14px}.kicker{color:var(--lime);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:16px}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service-card{min-height:260px;padding:28px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#141b2b,#0d121e);position:relative;overflow:hidden;transition:transform .35s,border-color .35s,background .35s}.service-card:before{content:'';position:absolute;width:170px;height:170px;border-radius:50%;background:var(--accent,var(--lime));filter:blur(90px);opacity:0;right:-60px;bottom:-70px;transition:.4s}.service-card:hover{transform:translateY(-8px);border-color:#c8ff4d80;background:#151d2c}.service-card:hover:before{opacity:.25}.service-icon{width:48px;height:48px;border-radius:14px;background:#c8ff4d14;color:var(--lime);display:grid;place-items:center;font-size:23px;margin-bottom:30px}.service-card h3{font-size:21px;margin-bottom:12px}.service-card p{font-size:13px;color:var(--muted);line-height:1.7;max-width:290px}.service-arrow{position:absolute;right:25px;top:27px;color:#65718a;font-size:21px;transition:.3s}.service-card:hover .service-arrow{color:var(--lime);transform:translate(4px,-4px)}
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:85px;align-items:center}.about-visual{min-height:440px;border-radius:24px;background:radial-gradient(circle at 35% 35%,#39446b,#171d35 42%,#0c1220 75%);border:1px solid var(--line);position:relative;overflow:hidden;display:grid;place-items:center}.about-visual:before{content:'';position:absolute;width:330px;height:330px;border:1px solid #c8ff4d65;border-radius:50%;box-shadow:0 0 70px #9275ff25}.about-visual:after{content:'';position:absolute;width:240px;height:240px;border:1px solid #62e6dc70;border-radius:50%;transform:rotateX(65deg) rotateZ(-25deg)}.about-symbol{font:700 120px var(--display);color:var(--lime);text-shadow:0 0 60px #c8ff4d55;z-index:1}.about-tag{position:absolute;bottom:25px;left:25px;background:#0b111dcc;border:1px solid var(--line);padding:14px 18px;border-radius:12px;font-size:12px;color:#c6cedd}.about-copy h2{font-size:clamp(36px,4vw,53px);letter-spacing:-2px;line-height:1.08;margin-bottom:22px}.about-copy>p{color:var(--muted);line-height:1.8;font-size:14px;margin-bottom:25px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:27px 0 32px}.checks span{font-size:13px;color:#dce3ee}.checks b{color:var(--lime);margin-right:8px}
+/* stats */
+.stats{padding:45px 0;background:linear-gradient(90deg,#c8ff4d,#a8e85c);color:#10170b}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.stat{text-align:center;border-right:1px solid #17210d30}.stat:last-child{border:0}.stat strong{font:700 43px var(--display);letter-spacing:-2px}.stat p{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;margin-top:5px;opacity:.7}
+/* work */
+/* .work-grid{display:grid;grid-template-columns:1.10fr .75fr;gap:17px}.project{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel);transition:.35s}.project:hover{transform:translateY(-6px);border-color:#c8ff4d75}.project-art{height:300px;position:relative;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,#263d50,#11182a)}.project:nth-child(2) .project-art{background:linear-gradient(135deg,#5a3a73,#1b1835)}.project:nth-child(3) .project-art{background:linear-gradient(135deg,#a5b5a1,#344e51)}.project:nth-child(4) .project-art{background:linear-gradient(135deg,#b98c63,#473448)}.project-art img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.project:hover .project-art img{transform:scale(1.06)}.mock-window{width:72%;height:70%;border:1px solid #ffffff65;border-radius:12px;background:#f4f4ef;box-shadow:0 25px 60px #0006;transform:rotate(-5deg);padding:16px;color:#17202a;transition:.5s}.project:hover .mock-window{transform:rotate(0) scale(1.04)}.mock-top{height:8px;width:45%;background:#b8c6b7;border-radius:8px;margin-bottom:15px}.mock-title{font:700 26px var(--display);line-height:1.1;max-width:200px}.mock-shape{height:75px;background:linear-gradient(120deg,#c8ff4d,#64b6a6);border-radius:8px;margin-top:13px}.project-info{padding:22px;display:flex;justify-content:space-between;align-items:center}.project-info h3{font-size:18px}.project-info p{color:var(--muted);font-size:12px;margin-top:5px}.project-info a{font-size:20px;color:var(--lime)} */
+
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 70%;
+    margin: 15px auto;
+}
+
+.project {
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--panel);
+    transition: .35s;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    border-color: #c8ff4d75;
+}
+
+.project-art {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: #17182a;
+}
+
+.project-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .7s;
+}
+
+.project:hover .project-art img {
+    transform: scale(1.06);
+}
+
+.project-info {
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-info h3 {
+    font-size: 16px;
+}
+
+.project-info p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.project-info a {
+    font-size: 20px;
+    color: var(--lime);
+}
+
+@media(max-width:600px) {
+    .work-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .project-art {
+        height: 220px;
+    }
+}
+
+/* process */
+
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:25px 22px;border-top:1px solid #ffffff35;position:relative}.step-num{font:600 12px var(--display);color:var(--lime);margin-bottom:34px}.step h3{font-size:20px;margin-bottom:12px}.step p{color:var(--muted);font-size:13px;line-height:1.7}.step:after{content:'↗';position:absolute;right:20px;top:20px;color:#59657a}
+/* testimonials */
+.testimonial{padding:42px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,#151c2b,#0c111d);max-width:850px;margin:auto;text-align:center}.stars{color:var(--lime);letter-spacing:5px;font-size:15px;margin-bottom:25px}.testimonial blockquote{font:500 clamp(20px,3vw,30px) var(--display);line-height:1.45;letter-spacing:-.5px}.client{display:flex;justify-content:center;align-items:center;gap:12px;margin-top:30px}.client-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--lime),var(--purple))}.client strong{font-size:13px;display:block;text-align:left}.client small{color:var(--muted);font-size:11px}
+/* FAQ and contact */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.faq-title h2{font-size:48px;letter-spacing:-2px;line-height:1.08}.faq-title p{color:var(--muted);line-height:1.7;margin-top:18px;font-size:14px}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;background:none;border:0;color:white;text-align:left;padding:22px 0;display:flex;justify-content:space-between;gap:20px;font:600 16px var(--display);cursor:pointer}.faq-q span:last-child{color:var(--lime);font-size:22px;transition:.3s}.faq-a{max-height:0;overflow:hidden;color:var(--muted);font-size:13px;line-height:1.8;transition:max-height .35s,padding .35s}.faq-item.open .faq-a{max-height:140px;padding:0 35px 20px 0}.faq-item.open .faq-q span:last-child{transform:rotate(45deg)}
+.contact{background:radial-gradient(ellipse at 15% 50%,#24334a 0,transparent 55%),#0d121e;border-block:1px solid var(--line)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.contact h2{font-size:clamp(40px,5vw,62px);letter-spacing:-3px;line-height:1.04;margin-bottom:20px}.contact-copy p{color:var(--muted);line-height:1.8;max-width:430px}.contact-details{margin-top:35px;display:grid;gap:14px;color:#dce4f0;font-size:13px}.contact-details span{display:flex;gap:12px;align-items:center}.contact-details b{color:var(--lime);font-size:17px}.contact-form{background:#111827;border:1px solid var(--line);border-radius:20px;padding:30px}.contact-form h3{font-size:22px;margin-bottom:7px}.contact-form>p{font-size:12px;color:var(--muted);margin-bottom:23px}.field{margin-bottom:14px}.field label{display:block;font-size:11px;color:#aab4c6;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;border:1px solid #ffffff20;background:#0b111d;color:white;border-radius:9px;padding:13px 14px;font:13px var(--font);outline:none;transition:.25s}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--lime);box-shadow:0 0 0 3px #c8ff4d13}.field textarea{height:90px;resize:vertical}.contact-form .btn{width:100%;margin-top:5px}.form-note{font-size:10px;color:#758198;margin-top:12px;text-align:center}
+footer{padding:35px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-row p{color:#7f8aa1;font-size:11px}.socials{display:flex;gap:17px;color:#aab4c6;font-size:12px}.socials a:hover{color:var(--lime)}.backtop{position:fixed;right:22px;bottom:22px;width:43px;height:43px;border-radius:50%;background:var(--lime);color:#10170b;display:grid;place-items:center;font-size:20px;z-index:15;opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s}.backtop.show{opacity:1;pointer-events:auto;transform:none}.reveal{opacity:0;transform:translateY(28px)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:15px}.hero{padding-top:140px}.hero-art{min-height:420px}.hero-copy{max-width:650px}.about-grid{gap:35px}.services-grid{grid-template-columns:repeat(2,1fr)}.faq-grid{gap:35px}.contact-grid{gap:30px}}
+@media(max-width:650px){.container{width:min(100% - 34px,1160px)}.nav{height:70px}.navlinks{display:none;position:absolute;top:70px;left:0;width:100%;padding:22px;background:#0c111d;flex-direction:column;gap:22px;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.nav-cta{display:none}.menu-btn{display:block}.hero{min-height:auto;padding:125px 0 75px}h1{font-size:49px;letter-spacing:-2.8px}.hero-art{min-height:360px}.orb{width:285px}.fc1{left:-2px;top:20px}.fc2{right:-4px;bottom:30px}.fc3{right:0;top:0}.section-head{display:block;margin-bottom:32px}.section-head p{margin-top:17px}.services-grid{grid-template-columns:1fr}.service-card{min-height:220px}.about-grid,.work-grid,.faq-grid,.contact-grid{grid-template-columns:1fr}.about-visual{min-height:330px;order:2}.about-copy{order:1}.stats-grid{grid-template-columns:repeat(2,1fr);row-gap:28px}.stat:nth-child(2){border:0}.stat strong{font-size:35px}.process-grid{grid-template-columns:repeat(2,1fr)}.step{padding:20px 12px}.testimonial{padding:28px 20px}.faq-title h2{font-size:40px}.contact-form{padding:22px}.footer-row{flex-direction:column;text-align:center}.checks{grid-template-columns:1fr 1fr}section{padding:82px 0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+.project-art {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #17152a;
+}
+
+.project-art img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+.project:hover .project-art img {
+    transform: scale(1.08);
+}
+
+.project-tag {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 8px 14px;
+    background: rgba(15, 12, 35, 0.8);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    font-size: 12px;
+    backdrop-filter: blur(10px);
+}
+
+</style>
+</head>
+<body>
+<div class="noise"></div>
+<header id="header"><div class="container nav"><a class="brand" href="#home"><span class="brand-mark">E</span> elevate<span>®</span></a><nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#work">Our Work</a><a href="#process">Process</a><a href="#contact">Contact</a></nav><a class="nav-cta" href="#contact">Let's talk <span>↗</span></a><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div></header>
+<main>
+<section class="hero" id="home"><div class="glow one"></div><div class="glow two"></div><div class="container hero-grid"><div class="hero-content"><div class="eyebrow">Digital growth, designed smarter</div><h1>Make your brand impossible to <span class="gradient">ignore.</span></h1><p class="hero-copy">We blend thoughtful design, smart technology and result-driven marketing to help ambitious businesses get noticed, win customers and grow online.</p><div class="hero-actions"><a class="btn primary" href="#contact">Start a project <span>↗</span></a><a class="btn secondary" href="#work">Explore our work <span>↓</span></a></div><div class="micro-proof"><div class="avatars"><i></i><i></i><i></i></div><span><b>Ideas into impact.</b><br>Built around your next big move.</span></div></div><div class="hero-art"><div class="orb"><div class="orb-core"></div></div><div class="float-card fc1"><small>Campaign growth</small><strong>+248%</strong><div class="up">↗ Moving forward</div></div><div class="float-card fc2"><small>Performance overview</small><strong>More visibility.</strong><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="float-card fc3"><strong>✦</strong><small>Creative minds</small></div></div></div><div class="scroll-note">Scroll to explore ↓</div></section>
+<div class="marquee"><div class="marquee-track"><span>Web design <b>✳</b></span><span>Digital marketing <b>✳</b></span><span>SEO & growth <b>✳</b></span><span>Brand identity <b>✳</b></span><span>Social media <b>✳</b></span><span>Video & content <b>✳</b></span><span>Web design <b>✳</b></span><span>Digital marketing <b>✳</b></span><span>SEO & growth <b>✳</b></span><span>Brand identity <b>✳</b></span><span>Social media <b>✳</b></span><span>Video & content <b>✳</b></span></div></div>
+<section id="services"><div class="container"><div class="section-head reveal"><div><div class="kicker">What we do</div><h2>Everything your brand needs to <span class="gradient">grow.</span></h2></div><p>One creative partner. A complete digital toolkit. We bring the right mix of strategy, creativity and technology to every project.</p></div><div class="services-grid">
+<article class="service-card reveal" style="--accent:#c8ff4d"><span class="service-arrow">↗</span><div class="service-icon">⌘</div><h3>Website Development</h3><p>Fast, beautiful and conversion-focused websites that turn visitors into customers.</p></article>
+<article class="service-card reveal" style="--accent:#62e6dc"><span class="service-arrow">↗</span><div class="service-icon">◉</div><h3>Digital Marketing</h3><p>Smart campaigns that put your business in front of the right people at the right time.</p></article>
+<article class="service-card reveal" style="--accent:#9275ff"><span class="service-arrow">↗</span><div class="service-icon">⌕</div><h3>SEO & Local SEO</h3><p>Improve search visibility and help nearby customers discover your business.</p></article>
+<article class="service-card reveal" style="--accent:#ff9e78"><span class="service-arrow">↗</span><div class="service-icon">✳</div><h3>Graphic Design & Branding</h3><p>Distinctive visual identities, social creatives and designs people remember.</p></article>
+<article class="service-card reveal" style="--accent:#62e6dc"><span class="service-arrow">↗</span><div class="service-icon">▷</div><h3>Video Editing</h3><p>Engaging reels, promotional videos and content made to hold attention.</p></article>
+<article class="service-card reveal" style="--accent:#9275ff"><span class="service-arrow">↗</span><div class="service-icon">▣</div><h3>E-commerce & Software</h3><p>Online stores and custom digital solutions built around how your business works.</p></article>
+</div></div></section>
+<section id="about"><div class="container about-grid"><div class="about-visual reveal"><div class="about-symbol">e.</div><div class="about-tag">Curiosity + creativity + measurable growth</div></div><div class="about-copy reveal"><div class="kicker">A little about us</div><h2>Good design gets attention. <span class="gradient">Great strategy</span> gets results.</h2><p>We are a digital-first creative studio helping local businesses and growing brands build a stronger online presence. From your first website to your next marketing campaign, we make digital feel simple, clear and effective.</p><div class="checks"><span><b>✓</b> Personal attention</span><span><b>✓</b> Clear communication</span><span><b>✓</b> Creative solutions</span><span><b>✓</b> Growth-focused work</span></div><a class="btn secondary" href="#contact">Meet your growth partner ↗</a></div></div></section>
+<div class="stats"><div class="container stats-grid"><div class="stat"><strong data-count="6">0</strong><p>Core services</p></div><div class="stat"><strong data-count="100" data-suffix="%">0</strong><p>Focus on your goals</p></div><div class="stat"><strong data-count="360" data-suffix="°">0</strong><p>Digital thinking</p></div><div class="stat"><strong data-count="1">0</strong><p>Dedicated partner</p></div></div></div>
+<!-- <section id="work"><div class="container"><div class="section-head reveal"><div><div class="kicker">Selected concepts</div><h2>Ideas made <span class="gradient">visible.</span></h2></div><p>A glimpse at the kind of digital experiences we can create. Replace these concept cards with your real client projects as your portfolio grows.</p></div><div class="work-grid">
+<article class="project reveal"><div class="project-art"><div class="mock-window"><div class="mock-top"></div><div class="mock-title">A better way to live.</div><div class="mock-shape"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdUxJsqlOkrqDBs2QPQHyc9BWcQW1DPIlkE-7bZy4OSQ&s=10"/></div></div></div><div class="project-info"><div><h3>Modern Lifestyle Website</h3><p>Web design · Development</p></div><a href="#contact">↗</a></div></article>
+<article class="project reveal"><div class="project-art"><div class="mock-window"><div class="mock-top"></div><div class="mock-title">Make every moment count.</div><div class="mock-shape" style="background:linear-gradient(120deg,#9275ff,#f5a1c4)"></div></div></div><div class="project-info"><div><h3>Social Media Campaign</h3><p>Branding · Social media</p></div><a href="#contact">↗</a></div></article>
+<article class="project reveal"><div class="project-art"><div class="mock-window"><div class="mock-top"></div><div class="mock-title">Naturally better.</div><div class="mock-shape" style="background:linear-gradient(120deg,#b7d6a1,#4d8874)"></div></div></div><div class="project-info"><div><h3>Organic Brand Identity</h3><p>Graphic design · Branding</p></div><a href="#contact">↗</a></div></article>
+<article class="project reveal"><div class="project-art"><div class="mock-window"><div class="mock-top"></div><div class="mock-title">Your next big move.</div><div class="mock-shape" style="background:linear-gradient(120deg,#e4b27d,#a95c74)"></div></div></div><div class="project-info"><div><h3>Growth Campaign</h3><p>SEO · Digital marketing</p></div><a href="#contact">↗</a></div></article>
+</div></div></section> -->
+
+<div class="work-grid">
+
+  <!-- Project 1: Website Design -->
+  <article class="project reveal">
+    <div class="project-art">
+      <img
+        src="images/i1.png"
+        alt="Modern lifestyle interior website design">
+      <span class="project-tag">Website Design</span>
+    </div>
+    <div class="project-info">
+      <div>
+        <h3>Modern Lifestyle Website</h3>
+        <p>Web design · Development</p>
+      </div>
+      <a href="#contact">↗</a>
+    </div>
+  </article>
+
+  <!-- Project 2: Social Media -->
+  <article class="project reveal">
+    <div class="project-art">
+      <img
+        src="images/i2.jpg"
+        alt="Social media marketing campaign">
+      <span class="project-tag">Social Media</span>
+    </div>
+    <div class="project-info">
+      <div>
+        <h3>Social Media Campaign</h3>
+        <p>Branding · Social media</p>
+      </div>
+      <a href="#contact">↗</a>
+    </div>
+  </article>
+
+  <!-- Project 3: Branding -->
+  <article class="project reveal">
+    <div class="project-art">
+      <img
+        src="images/i3.avif"
+        alt="Organic product branding and packaging">
+      <span class="project-tag">Brand Identity</span>
+    </div>
+    <div class="project-info">
+      <div>
+        <h3>Organic Brand Identity</h3>
+        <p>Graphic design · Branding</p>
+      </div>
+      <a href="#contact">↗</a>
+    </div>
+  </article>
+
+  <!-- Project 4: Digital Marketing -->
+  <article class="project reveal">
+    <div class="project-art">
+      <img
+        src="images/i4.png"
+        alt="Digital marketing analytics dashboard">
+      <span class="project-tag">Digital Marketing</span>
+    </div>
+    <div class="project-info">
+      <div>
+        <h3>Growth Campaign</h3>
+        <p>SEO · Digital marketing</p>
+      </div>
+      <a href="#contact">↗</a>
+    </div>
+  </article>
+
+</div>
+
+<section id="process"><div class="container"><div class="section-head reveal"><div><div class="kicker">How we work</div><h2>A simple process. <span class="gradient">Strong outcomes.</span></h2></div><p>No confusing jargon or unnecessary steps. Just a clear path from your idea to a digital solution that works.</p></div><div class="process-grid"><div class="step reveal"><div class="step-num">01 / DISCOVER</div><h3>Understand</h3><p>We learn about your business, audience, goals and what success looks like.</p></div><div class="step reveal"><div class="step-num">02 / STRATEGY</div><h3>Plan</h3><p>We shape the right approach, timeline and creative direction for your needs.</p></div><div class="step reveal"><div class="step-num">03 / CREATE</div><h3>Build</h3><p>We design, develop and refine your project with your feedback at every step.</p></div><div class="step reveal"><div class="step-num">04 / GROW</div><h3>Launch & improve</h3><p>We launch, review performance and identify opportunities to keep improving.</p></div></div></div></section>
+<section><div class="container"><div class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>“The best digital experiences start with listening. Tell us where you want to go — we'll help you build the path.”</blockquote><div class="client"><div class="client-avatar"></div><div><strong>Your next success story</strong><small>Could start right here</small></div></div></div></div></section>
+<section id="faq"><div class="container faq-grid"><div class="faq-title reveal"><div class="kicker">Questions, answered</div><h2>Curious? We've got <span class="gradient">you.</span></h2><p>Here are a few things businesses often ask before starting a project with us.</p></div><div class="faq-list reveal"><div class="faq-item open"><button class="faq-q"><span>What services do you provide?</span><span>+</span></button><div class="faq-a">We offer website development, digital marketing, SEO, graphic design, video editing, social media management, e-commerce and custom software solutions.</div></div><div class="faq-item"><button class="faq-q"><span>How much does a website or campaign cost?</span><span>+</span></button><div class="faq-a">Pricing depends on your goals, scope and features. Share a little about your project and we will prepare a clear, tailored estimate.</div></div><div class="faq-item"><button class="faq-q"><span>How long will my project take?</span><span>+</span></button><div class="faq-a">Timelines vary by project. After understanding your requirements, we will share realistic milestones before work begins.</div></div><div class="faq-item"><button class="faq-q"><span>Can you help a small or local business?</span><span>+</span></button><div class="faq-a">Absolutely. We can help local businesses build a professional online presence and reach customers through websites, local SEO and social media.</div></div><div class="faq-item"><button class="faq-q"><span>How do I get started?</span><span>+</span></button><div class="faq-a">Use the contact form below or message us on WhatsApp. Tell us what you need and we will take it from there.</div></div></div></div></section>
+<section class="contact" id="contact"><div class="container contact-grid"><div class="contact-copy reveal"><div class="kicker">Let's make it happen</div><h2>Your next chapter starts with a <span class="gradient">hello.</span></h2><p>Have a project in mind or just want to explore what's possible? Tell us a little about your business. We'd love to hear from you.</p><div class="contact-details"><span><b>✉</b> hello@yourbrand.com</span><span><b>⌖</b> Pune, Maharashtra, India</span><span><b>◷</b> Mon – Sat · 10 AM – 6 PM</span></div></div><form class="contact-form reveal" id="contactForm"><h3>Tell us about your project</h3><p>We'll get back to you as soon as possible.</p><div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="e.g. Priya Sharma" required></div><div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required></div><div class="field"><label for="service">What do you need?</label><select id="service" name="service" required><option value="">Choose a service</option><option>Website Development</option><option>Digital Marketing</option><option>SEO / Local SEO</option><option>Graphic Design & Branding</option><option>Video Editing</option><option>E-commerce / Software</option><option>Something else</option></select></div><div class="field"><label for="message">A little about your project</label><textarea id="message" name="message" placeholder="Tell us what you're looking to achieve..."></textarea></div><button class="btn primary" type="submit">Send enquiry via WhatsApp ↗</button><div class="form-note">This demo form opens WhatsApp with your message. No data is stored on this website.</div></form></div></section>
+</main>
+<footer><div class="container footer-row"><a class="brand" href="#home"><span class="brand-mark">E</span> elevate<span>®</span></a><p>© <span id="year"></span> Elevate Studio. Built for what's next.</p><div class="socials"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Facebook</a></div></div></footer><a class="backtop" id="backtop" href="#home" aria-label="Back to top">↑</a>
+<script>
+// Update these details before publishing:
+const WHATSAPP_NUMBER = "91XXXXXXXXXX"; // Include country code, without + or spaces.
+const header=document.getElementById('header'),backtop=document.getElementById('backtop');
+window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>30);backtop.classList.toggle('show',window.scrollY>500)});
+document.getElementById('year').textContent=new Date().getFullYear();
+const menuBtn=document.getElementById('menuBtn'),navlinks=document.getElementById('navlinks');menuBtn.addEventListener('click',()=>navlinks.classList.toggle('open'));navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navlinks.classList.remove('open')));
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.parentElement;document.querySelectorAll('.faq-item').forEach(el=>{if(el!==item)el.classList.remove('open')});item.classList.toggle('open')}));
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const data=new FormData(e.currentTarget);const message=`Hello! I would like to enquire about your services.\n\nName: ${data.get('name')}\nEmail: ${data.get('email')}\nService: ${data.get('service')}\nProject: ${data.get('message')||'Not specified'}`;if(WHATSAPP_NUMBER.includes('X')){alert('Please add your WhatsApp number in the WHATSAPP_NUMBER setting inside index.html first.');return}window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,'_blank')});
+// GSAP entrance + scroll reveal animations
+if(window.gsap&&window.ScrollTrigger){gsap.registerPlugin(ScrollTrigger);gsap.from('.hero-content > *',{y:28,opacity:0,duration:.85,stagger:.12,ease:'power3.out',delay:.15});gsap.from('.hero-art',{opacity:0,scale:.88,duration:1.2,ease:'power3.out',delay:.3});gsap.utils.toArray('.reveal').forEach(el=>gsap.to(el,{opacity:1,y:0,duration:.8,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 88%',once:true}}));document.querySelectorAll('[data-count]').forEach(el=>{const end=Number(el.dataset.count),suffix=el.dataset.suffix||'';ScrollTrigger.create({trigger:el,start:'top 90%',once:true,onEnter:()=>gsap.to({n:0},{n:end,duration:1.6,ease:'power2.out',onUpdate:function(){el.textContent=Math.round(this.targets()[0].n)+suffix}})})})}else{document.querySelectorAll('.reveal').forEach(el=>{el.style.opacity=1;el.style.transform='none'})}
+</script>
+</body></html>
